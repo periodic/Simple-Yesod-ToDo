@@ -1,0 +1,1 @@
+$(function(){$("#h3").datepicker({dateFormat:'yy-mm-dd',changeMonth:false,changeYear:true,numberOfMonths:1,yearRange:"1900:0"})})

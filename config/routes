@@ -1,0 +1,12 @@
+/static StaticR Static getStatic
+/auth   AuthR   Auth   getAuth
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ RootR GET
+/champion/index              ChampionIndexR GET
+/champion/view/#ChampionId   ChampionViewR  GET
+/champion/create             ChampionCreateR GET POST
+/champion/update/#ChampionId ChampionUpdateR GET POST
+/champion/delete/#ChampionId ChampionDeleteR GET POST DELETE
