@@ -21,8 +21,9 @@ import qualified Database.Persist.Base
 import Database.Persist.GenericSql (runMigration)
 
 -- Import all relevant handler modules here.
+import Handler.ToDo
+import Handler.List
 import Handler.Root
-import Handler.Champion
 
 -- This line actually creates our YesodSite instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see

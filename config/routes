@@ -5,8 +5,15 @@
 /robots.txt RobotsR GET
 
 / RootR GET
-/champion/index              ChampionIndexR GET
-/champion/view/#ChampionId   ChampionViewR  GET
-/champion/create             ChampionCreateR GET POST
-/champion/update/#ChampionId ChampionUpdateR GET POST
-/champion/delete/#ChampionId ChampionDeleteR GET POST DELETE
+
+/todo/index          ToDoIndexR GET
+/todo/view/#ToDoId   ToDoViewR  GET
+/todo/create         ToDoCreateR GET POST
+/todo/update/#ToDoId ToDoUpdateR GET POST
+/todo/delete/#ToDoId ToDoDeleteR GET POST DELETE
+
+/list/index          ListIndexR GET
+/list/view/#ListId   ListViewR  GET
+/list/create         ListCreateR GET POST
+/list/update/#ListId ListUpdateR GET POST
+/list/delete/#ListId ListDeleteR GET POST DELETE

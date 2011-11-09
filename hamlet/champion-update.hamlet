@@ -1,8 +1,0 @@
-<h1>Update #{championName champ}
-
-<form action=@{ChampionUpdateR championId} method=POST>
-    ^{form}
-
-    <input type="submit">
-
-<a href=@{ChampionIndexR}>Back

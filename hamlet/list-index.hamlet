@@ -1,0 +1,11 @@
+<h1>List Index
+$forall list <- lists
+    <p>
+        #{listName (snd list)}
+        <a href=@{ListViewR (fst list)}>View
+        <a href=@{ListUpdateR (fst list)}>Edit
+        <a href=@{ListDeleteR (fst list)} onClick="return confirm('Are you sure you want to delete?');">Delete
+
+<a href=@{ListCreateR}>Create New
+    
+

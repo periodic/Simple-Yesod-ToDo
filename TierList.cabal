@@ -31,8 +31,9 @@ library
                      Model
                      Settings
                      Settings.StaticFiles
+                     Handler.ToDo
+                     Handler.List
                      Handler.Root
-                     Handler.Champion
 
     ghc-options:   -Wall -threaded -O0
 

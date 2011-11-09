@@ -1,0 +1,6 @@
+<h1>#{listName list}
+<p>Created: #{show (listCreated list)}
+$maybe user <- maybeUser
+    <p>User: #{userIdent user}
+
+<a href=@{ListIndexR}>Back

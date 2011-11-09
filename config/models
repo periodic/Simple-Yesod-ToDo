@@ -7,16 +7,16 @@ Email
     user UserId Maybe
     verkey Text Maybe
     UniqueEmail email
-Champion
+ToDo
     name Text
     created Day
     imageUrl Text
     UniqueName name
 ListEntry
-    champion ChampionId
-    list     ListId
-    notes    Text
-    UniqueListEntry champion list
+    todo    ToDoId
+    list    ListId
+    notes   Text
+    UniqueListEntry todo list
 List
     name Text
     user UserId
