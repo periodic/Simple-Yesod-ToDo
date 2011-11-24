@@ -1,0 +1,24 @@
+Default: &defaults
+  user: TierList
+  password: TierList
+  host: localhost
+  port: 27017
+  database: TierList
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Test:
+  database: test
+  <<: *defaults
+
+Staging:
+  database: TierList_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: TierList_production
+  poolsize: 100
+  <<: *defaults
