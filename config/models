@@ -7,18 +7,12 @@ Email
     user UserId Maybe
     verkey Text Maybe
     UniqueEmail email
-ToDo
+Champion
     name Text
-    created Day
+    created UTCTime
     imageUrl Text
-    UniqueName name
-ListEntry
-    todo    ToDoId
-    list    ListId
-    notes   Text
-    UniqueListEntry todo list
 List
     name Text
-    user UserId
     created UTCTime
+    data TierListData
 

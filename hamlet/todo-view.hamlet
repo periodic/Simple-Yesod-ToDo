@@ -1,5 +1,0 @@
-<h1>#{toDoName todo}
-<p>Created: #{show (toDoCreated todo)}
-<p>Image: #{toDoImageUrl todo}
-
-<a href=@{ToDoIndexR}>Back

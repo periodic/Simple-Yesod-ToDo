@@ -1,8 +1,0 @@
-<h1>Update #{toDoName todo}
-
-<form action=@{ToDoUpdateR toDoId} method=POST>
-    ^{form}
-
-    <input type="submit">
-
-<a href=@{ToDoIndexR}>Back

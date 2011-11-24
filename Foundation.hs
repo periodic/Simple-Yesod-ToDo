@@ -29,7 +29,7 @@ import Yesod.Logger (Logger, logLazyText)
 import qualified Settings
 import qualified Data.ByteString.Lazy as L
 import qualified Database.Persist.Base
-import Database.Persist.GenericSql
+import Database.Persist.MongoDB
 import Settings (widgetFile)
 import Model
 import Text.Jasmine (minifym)
@@ -121,7 +121,7 @@ instance Yesod TierList where
 
 -- How to run database actions.
 instance YesodPersist TierList where
-    type YesodPersistBackend TierList = SqlPersist
+    type YesodPersistBackend TierList = Action
     runDB f = liftIOHandler
             $ fmap connPool getYesod >>= Database.Persist.Base.runPool (undefined :: Settings.PersistConfig) f
 

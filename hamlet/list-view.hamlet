@@ -1,6 +1,12 @@
 <h1>#{listName list}
 <p>Created: #{show (listCreated list)}
-$maybe user <- maybeUser
-    <p>User: #{userIdent user}
+
+<ul>
+    $forall entry <- tldEntries (listData list)
+        <li>
+            $maybe sepText <- isSeparator entry
+                <p.separator>#{sepText}
+            $maybe champ <- isChamp entry
+                <p.champion>#{show (ceChampId champ)}
 
 <a href=@{ListIndexR}>Back

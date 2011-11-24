@@ -15,13 +15,13 @@ module Settings
 
 import Text.Shakespeare.Text (st)
 import Language.Haskell.TH.Syntax
-import Database.Persist.Sqlite (SqliteConf)
+import Database.Persist.MongoDB
 import Yesod.Default.Config
 import qualified Yesod.Default.Util
 import Data.Text (Text)
 
 -- | Which Persistent backend this site is using.
-type PersistConfig = SqliteConf
+type PersistConfig = MongoConf
 
 -- Static setting below. Changing these requires a recompile
 

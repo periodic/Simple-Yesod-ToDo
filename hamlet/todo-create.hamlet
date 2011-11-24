@@ -1,8 +1,0 @@
-<h1>Create new todo
-
-<form action=@{ToDoCreateR} method=POST>
-    ^{form}
-
-    <input type="submit">
-
-<a href=@{ToDoIndexR}>Back

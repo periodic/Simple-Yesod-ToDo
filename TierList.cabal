@@ -31,9 +31,9 @@ library
                      Model
                      Settings
                      Settings.StaticFiles
-                     Handler.ToDo
                      Handler.List
                      Handler.Root
+                     Handler.Champion
 
     ghc-options:   -Wall -threaded -O0
 
@@ -62,7 +62,8 @@ executable         TierList
                  , text                          >= 0.11       && < 0.12
                  , time                          >= 1.2.0.3    && < 1.2.0.4
                  , persistent                    >= 0.6.2      && < 0.7
-                 , persistent-sqlite     >= 0.6        && < 0.7
+                 , persistent-mongoDB            >= 0.6        && < 0.7
+                 , persistent-template
                  , template-haskell
                  , hamlet                        >= 0.10       && < 0.11
                  , shakespeare-css               >= 0.10       && < 0.11

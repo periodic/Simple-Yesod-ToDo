@@ -15,13 +15,11 @@ import Yesod.Default.Config
 import Yesod.Default.Main
 import Yesod.Default.Handlers
 import Yesod.Logger (Logger)
-import Data.ByteString (ByteString)
 import Data.Dynamic (Dynamic, toDyn)
 import qualified Database.Persist.Base
-import Database.Persist.GenericSql (runMigration)
 
 -- Import all relevant handler modules here.
-import Handler.ToDo
+import Handler.Champion
 import Handler.List
 import Handler.Root
 
@@ -41,10 +39,9 @@ withTierList conf logger f = do
 #else
     s <- staticDevel Settings.staticDir
 #endif
-    dbconf <- withYamlEnvironment "config/sqlite.yml" (appEnv conf)
+    dbconf <- withYamlEnvironment "config/mongoDB.yml" (appEnv conf)
             $ either error return . Database.Persist.Base.loadConfig
     Database.Persist.Base.withPool (dbconf :: Settings.PersistConfig) $ \p -> do
-        Database.Persist.Base.runPool dbconf (runMigration migrateAll) p
         let h = TierList conf logger s p
         defaultRunner f h
 
