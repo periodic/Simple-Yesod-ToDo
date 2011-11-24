@@ -118,5 +118,8 @@ championListField idNameMap = Field
         <li>
             <input type=hidden name=#{nameAttr}[]>
                 #{getRowId row} #{getRowText row}
+<select>
+    $forall (champId, champ) <- idNameMap
+        <option value=#{championName champ}>#{championName champ}
 |]
 
