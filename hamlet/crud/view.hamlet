@@ -1,0 +1,5 @@
+<h1>__DATA__
+
+<p>#{show item}
+
+<a href=@{__DATA__IndexR}>Back

@@ -1,0 +1,8 @@
+<h1>Update __DATA__
+
+<form action=@{__DATA__UpdateR id} method=POST>
+    ^{form}
+
+    <input type="submit">
+
+<a href=@{__DATA__IndexR}>Back

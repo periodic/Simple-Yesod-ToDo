@@ -1,0 +1,8 @@
+<h1>Create __DATA__
+
+<form action=@{__DATA__CreateR} method=POST>
+    ^{form}
+
+    <input type="submit">
+
+<a href=@{__DATA__IndexR}>Back
